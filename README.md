@@ -1,2 +1,2 @@
 # guy
-Collaborative shopping list iOS software
+Food ordering iOS software
