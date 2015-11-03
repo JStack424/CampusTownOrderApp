@@ -17,8 +17,8 @@
 		D892FF531BE6995700FDE223 /* CSC415Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892FF521BE6995700FDE223 /* CSC415Tests.swift */; };
 		D892FF5E1BE6995800FDE223 /* CSC415UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892FF5D1BE6995800FDE223 /* CSC415UITests.swift */; };
 		D8A762BE1BE884EC0074189A /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A762BD1BE884EC0074189A /* ItemViewController.swift */; };
-		D8DF10A01BE904BD00EC75FE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8DF109E1BE904BD00EC75FE /* LICENSE */; };
-		D8DF10A11BE904BD00EC75FE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D8DF109F1BE904BD00EC75FE /* README.md */; };
+		D8DF10A31BE9063400EC75FE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8DF10A21BE9063400EC75FE /* LICENSE */; };
+		D8DF10A51BE9063800EC75FE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D8DF10A41BE9063800EC75FE /* README.md */; };
 		D8FD13DB1BE86ED5008CAF71 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD13DA1BE86ED5008CAF71 /* MenuTableViewController.swift */; };
 		D8FD13DD1BE870DB008CAF71 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD13DC1BE870DB008CAF71 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
@@ -57,8 +57,8 @@
 		D892FF5D1BE6995800FDE223 /* CSC415UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC415UITests.swift; sourceTree = "<group>"; };
 		D892FF5F1BE6995800FDE223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A762BD1BE884EC0074189A /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
-		D8DF109E1BE904BD00EC75FE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../guy/LICENSE; sourceTree = "<group>"; };
-		D8DF109F1BE904BD00EC75FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../guy/README.md; sourceTree = "<group>"; };
+		D8DF10A21BE9063400EC75FE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D8DF10A41BE9063800EC75FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8FD13DA1BE86ED5008CAF71 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		D8FD13DC1BE870DB008CAF71 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,10 +119,10 @@
 				D8A762BD1BE884EC0074189A /* ItemViewController.swift */,
 				D8729BFF1BE893C8007BE967 /* CartTableViewController.swift */,
 				D892FF411BE6995700FDE223 /* Main.storyboard */,
+				D8DF10A21BE9063400EC75FE /* LICENSE */,
+				D8DF10A41BE9063800EC75FE /* README.md */,
 				D892FF441BE6995700FDE223 /* Assets.xcassets */,
 				D892FF461BE6995700FDE223 /* LaunchScreen.storyboard */,
-				D8DF109E1BE904BD00EC75FE /* LICENSE */,
-				D8DF109F1BE904BD00EC75FE /* README.md */,
 				D892FF491BE6995700FDE223 /* Info.plist */,
 			);
 			path = CSC415;
@@ -255,7 +255,7 @@
 			files = (
 				D892FF481BE6995700FDE223 /* LaunchScreen.storyboard in Resources */,
 				D892FF451BE6995700FDE223 /* Assets.xcassets in Resources */,
-				D8DF10A01BE904BD00EC75FE /* LICENSE in Resources */,
+				D8DF10A31BE9063400EC75FE /* LICENSE in Resources */,
 				D892FF431BE6995700FDE223 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +287,7 @@
 				D835732E1BE86721009B6592 /* MenuItemCell.swift in Sources */,
 				D8A762BE1BE884EC0074189A /* ItemViewController.swift in Sources */,
 				D892FF3C1BE6995700FDE223 /* AppDelegate.swift in Sources */,
-				D8DF10A11BE904BD00EC75FE /* README.md in Sources */,
+				D8DF10A51BE9063800EC75FE /* README.md in Sources */,
 				D892FF3E1BE6995700FDE223 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
