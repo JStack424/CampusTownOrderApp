@@ -16,8 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzabackground" translatesAutoresizingMaskIntoConstraints="NO" id="BHM-Ob-8xg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BHM-Ob-8xg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="SqQ-If-IQ5"/>
+                            <constraint firstAttribute="trailing" secondItem="BHM-Ob-8xg" secondAttribute="trailing" id="UUf-hT-gZi"/>
+                            <constraint firstItem="BHM-Ob-8xg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="pU3-r7-ghI"/>
+                            <constraint firstItem="BHM-Ob-8xg" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="vAh-EQ-Dg3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pizzabackground" width="480" height="728"/>
+    </resources>
 </document>

@@ -83,6 +83,7 @@ class CartTableViewController: UITableViewController {
         if editingStyle == .Delete {
             // Delete the row from the data source
             cartItems.removeAtIndex(indexPath.row)
+            print(tableView.subviews)
             tableView.reloadData()
             calculatePrice()
             //tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)

@@ -12,7 +12,13 @@ import UIKit
 class MenuTableViewController: UITableViewController {
 
     // MARK: Properties
-    var items = EveryItem().menuItems
+    var items = EveryItem().menuItems.sort { (item1: MenuItem, item2: MenuItem) -> Bool in
+        if item1.name < item2.name {
+            return true
+        } else {
+            return false
+        }
+    }
 
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

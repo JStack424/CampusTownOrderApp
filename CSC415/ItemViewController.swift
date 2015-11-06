@@ -15,6 +15,7 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemPicture: UIImageView!
     @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var itemDescription: UILabel!
     
 
     
@@ -28,6 +29,18 @@ class ItemViewController: UIViewController {
             let formatter = NSNumberFormatter()
             formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
             itemPrice.text = formatter.stringFromNumber(currentItem.price)
+        }
+        itemDescription.text = "Toppings:\n"
+        switch itemName.text! {
+        case "Plain Slice": itemDescription.text = "Just a plain old slice of pizza"
+            case "Pepperoni Slice": itemDescription.text?.appendContentsOf("Pepperoni")
+            case "Specialty Slice": itemDescription.text?.appendContentsOf("Onion, Salami, Black Olives, Red Peppers")
+            case "Sausage Slice": itemDescription.text?.appendContentsOf("Sausage")
+            case "Veggie Slice": itemDescription.text?.appendContentsOf("Green Peppers, Red Peppers")
+            case "Buffalo Chicken Slice": itemDescription.text?.appendContentsOf("Chicken, Hot Sauce, Ranch, Blue Cheese")
+            case "Greek Slice": itemDescription.text?.appendContentsOf("Pepperoni, Artichoke, Green Peppers, Mushrooms")
+            case "Hawaiian Slice": itemDescription.text?.appendContentsOf("Ham, Pineapple")
+        default: itemDescription.text = "Wrong Pizza"
         }
     }
     
