@@ -17,21 +17,25 @@ class CartTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         priceLabel.backgroundColor = UIColor.greenColor()
-        calculatePrice()
+        setPrice()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
     }
 
-    func calculatePrice() {
+    func calcPrice() -> Float {
         var totalCost: Float = 0
         for item in cartItems {
             totalCost += item.price
         }
+        return totalCost
+    }
+    func setPrice() {
+        let totalCost = calcPrice()
         let formatter = NSNumberFormatter()
         formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
-        priceLabel.text = "Total Cost: " + formatter.stringFromNumber(totalCost)!
+        priceLabel.text = "  Total Cost: " + formatter.stringFromNumber(totalCost)!
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,7 +89,7 @@ class CartTableViewController: UITableViewController {
             cartItems.removeAtIndex(indexPath.row)
             print(tableView.subviews)
             tableView.reloadData()
-            calculatePrice()
+            setPrice()
             //tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -107,14 +111,18 @@ class CartTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
+        if let CheckoutVC = segue.destinationViewController as? CheckoutViewController {
+            CheckoutVC.totalCost = calcPrice()
+            CheckoutVC.orderedItems = cartItems
+        }
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

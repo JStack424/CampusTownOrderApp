@@ -18,6 +18,7 @@
 		D892FF531BE6995700FDE223 /* CSC415Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892FF521BE6995700FDE223 /* CSC415Tests.swift */; };
 		D892FF5E1BE6995800FDE223 /* CSC415UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892FF5D1BE6995800FDE223 /* CSC415UITests.swift */; };
 		D8A762BE1BE884EC0074189A /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A762BD1BE884EC0074189A /* ItemViewController.swift */; };
+		D8E1E5A31BECADFF0049FBA1 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1E5A21BECADFF0049FBA1 /* CheckoutViewController.swift */; };
 		D8FD13DB1BE86ED5008CAF71 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD13DA1BE86ED5008CAF71 /* MenuTableViewController.swift */; };
 		D8FD13DD1BE870DB008CAF71 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD13DC1BE870DB008CAF71 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		D892FF5D1BE6995800FDE223 /* CSC415UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC415UITests.swift; sourceTree = "<group>"; };
 		D892FF5F1BE6995800FDE223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A762BD1BE884EC0074189A /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		D8E1E5A21BECADFF0049FBA1 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		D8FD13DA1BE86ED5008CAF71 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		D8FD13DC1BE870DB008CAF71 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D8729BFF1BE893C8007BE967 /* CartTableViewController.swift */,
+				D8E1E5A21BECADFF0049FBA1 /* CheckoutViewController.swift */,
 			);
 			name = Cart;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				D8A762BE1BE884EC0074189A /* ItemViewController.swift in Sources */,
 				D892FF3C1BE6995700FDE223 /* AppDelegate.swift in Sources */,
 				D892FF3E1BE6995700FDE223 /* InfoViewController.swift in Sources */,
+				D8E1E5A31BECADFF0049FBA1 /* CheckoutViewController.swift in Sources */,
 				D86102631BE977AF00162725 /* EveryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

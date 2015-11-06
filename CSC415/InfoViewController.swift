@@ -22,9 +22,9 @@ class InfoViewController: UIViewController {
 
         let theAddress = "1234 Foobar rd. Ewing, NJ 08638"
         let thePhoneNumber = "(123) 456-7890"
-        let theDescription = "A happy family restaurant where wer serve pizza of all different kinds. More info more info more info more info"
+        let theDescription = "A happy family restaurant where we serve pizza of all different kinds. More info more info more info more info"
         let theHours = "\n\tMonday 10:00am - 9:00pm\n\tTuesday 10:00am - 10:00pm\n\tWednesday 10:00am - 9:00pm\n\tThursday 10:00am - 9:00pm\n\tFriday 10:00am - 11:00pm\n\tSaturday 12:00pm - 11:00pm\n\tSunday 10:00am - 8:00pm"
-        restaurantInfo.text = "Address: \(theAddress)\nPhone Number: \(thePhoneNumber)\nDescription: \(theDescription)\nHours: \(theHours)"
+        restaurantInfo.text = "Address: \(theAddress)\n\nPhone Number: \(thePhoneNumber)\n\nDescription: \(theDescription)\n\nHours: \(theHours)"
         restaurantInfo.font = UIFont(name: UIFont.preferredFontForTextStyle("body").fontName, size: CGFloat(15))
         super.viewDidLoad()
 
