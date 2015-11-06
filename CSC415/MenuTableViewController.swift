@@ -12,7 +12,9 @@ import UIKit
 class MenuTableViewController: UITableViewController {
 
     // MARK: Properties
+    // Instantiates an array of every available item, and then sorts the elements alphabetically
     var items = EveryItem().menuItems.sort { (item1: MenuItem, item2: MenuItem) -> Bool in
+        //Declares the function used to sort each MenuItem
         if item1.name < item2.name {
             return true
         } else {
@@ -21,14 +23,17 @@ class MenuTableViewController: UITableViewController {
     }
 
 
+    //Declares the number of sections in tableView
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
+    //allows the number of items to be dependent upon the data structure used to hold the menu
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
+    //Function which creates the visual cells and properly assigns their information
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentiefier = "MenuItemCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentiefier, forIndexPath: indexPath) as! MenuItemCell
@@ -80,6 +85,7 @@ class MenuTableViewController: UITableViewController {
     }
     */
 
+    //This function remembers which cell of the table was pressed and sends its information to the segue
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectedItem = items[indexPath.row]
         self.performSegueWithIdentifier("detailSegue", sender: selectedItem)
@@ -88,6 +94,7 @@ class MenuTableViewController: UITableViewController {
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //Gets the next view controller and passes necessary data to it before performing segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         let nextViewController = segue.destinationViewController as! ItemViewController

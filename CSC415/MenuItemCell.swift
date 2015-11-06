@@ -12,16 +12,13 @@ class MenuItemCell: UITableViewCell {
 
     // MARK: Properties
     
-
+    //Interface Builder outlets to the important information displayed in the table's cells
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var priceView: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
+    //Decides what to do when a cell is selected
     override func setSelected(selected: Bool, animated: Bool) {
         
         super.setSelected(selected, animated: animated)

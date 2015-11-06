@@ -10,6 +10,7 @@ import UIKit
 
 class EveryItem {
     
+    //Declaration of all items on the menu
     let menuItems: [MenuItem] = [
         MenuItem(name: "Plain Slice", photo: UIImage(named: "plain"), price: 2.5),
         MenuItem(name: "Pepperoni Slice", photo: UIImage(named: "pepperoni"), price: 3),
