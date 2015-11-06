@@ -8,60 +8,18 @@
 
 import UIKit
 
+
 class MenuTableViewController: UITableViewController {
 
     // MARK: Properties
-    
-    var items = [MenuItem]()
-    
-    @IBOutlet weak var menuItem: MenuItemCell!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadSampleMeals()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    var items = EveryItem().menuItems
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    func loadSampleMeals() {
-        let photo1 = UIImage(named: "pizza1")
-        let photo2 = UIImage(named: "pizza2")
-        let photo3 = UIImage(named: "pizza3")
-
-        let item1 = MenuItem(name: "Plain Slice", photo: photo1, price: 2.50)
-        let item2 = MenuItem(name: "Pepperoni Slice", photo: photo2, price: 3.50)
-        let item3 = MenuItem(name: "Specialty Slice", photo: photo3, price: 5.00)
-        
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-        items += [item1, item2, item3]
-
-    }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return items.count
     }
 
@@ -115,10 +73,10 @@ class MenuTableViewController: UITableViewController {
         return true
     }
     */
-    var selectedItem: MenuItem?
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedItem = items[indexPath.row]
-        self.performSegueWithIdentifier("detailSegue", sender: self)
+        let selectedItem = items[indexPath.row]
+        self.performSegueWithIdentifier("detailSegue", sender: selectedItem)
     }
     
     // MARK: - Navigation
@@ -127,7 +85,7 @@ class MenuTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         let nextViewController = segue.destinationViewController as! ItemViewController
-        nextViewController.inputItem = selectedItem
+        nextViewController.inputItem = sender as? MenuItem
         // Pass the selected object to the new view controller.
         
     }

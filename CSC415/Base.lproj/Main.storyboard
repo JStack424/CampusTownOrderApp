@@ -18,8 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" horizontalCompressionResistancePriority="150" verticalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="Wxo-VE-qoN">
+                                <rect key="frame" x="12" y="65" width="568" height="157"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="Yjr-0c-4IO"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INo-Z0-gy0">
-                                <rect key="frame" x="12" y="185" width="568" height="358"/>
+                                <rect key="frame" x="12" y="230" width="568" height="313"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -27,187 +37,7 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="dXa-Hq-kb3"/>
                                     <constraint firstAttribute="height" constant="142" id="tWo-5l-1Ac"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Name:">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> Generic Pizza Place
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Address: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">1234 Foobar rd. Ewing, NJ 08638
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Phone Number: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">(123) 456 - 7890
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Description:">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> A happy family restaurant where we serve pizza of all different kinds. more info more info more info more info more info more info more info more info more info 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Hours:">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgk
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Monday: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">10:00am - 9:00pm
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Tuesday:">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> 10:00am - 10:00pm
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Wednesday:">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> 10:00am - 9:00pm
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Thursday: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">10:00am - 9:00pm
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Friday: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">10:00am - 11:00pm
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">	Saturday: </string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">12:00pm - 11:00pm
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Sunday: ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-MediumItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="10:00am - 8:00pm">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
                                 <variation key="default">
@@ -217,16 +47,13 @@ Cgk
                                     </mask>
                                 </variation>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" horizontalCompressionResistancePriority="150" verticalCompressionResistancePriority="150" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="Wxo-VE-qoN">
-                                <rect key="frame" x="12" y="20" width="568" height="157"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsR-kz-QPT">
+                                <rect key="frame" x="20" y="28" width="560" height="29"/>
                                 <animations/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="157" id="Yjr-0c-4IO"/>
-                                </constraints>
-                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -236,22 +63,32 @@ Cgk
                             <constraint firstItem="Wxo-VE-qoN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-8" id="1jK-e1-OxP"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="INo-Z0-gy0" secondAttribute="bottom" constant="8" id="59i-fN-jd9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="INo-Z0-gy0" secondAttribute="trailing" id="7jv-Pz-iyr"/>
-                            <constraint firstItem="Wxo-VE-qoN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="bAe-iD-9Et"/>
+                            <constraint firstItem="Wxo-VE-qoN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="60" id="bAe-iD-9Et"/>
                             <constraint firstItem="INo-Z0-gy0" firstAttribute="top" secondItem="Wxo-VE-qoN" secondAttribute="bottom" constant="8" id="byn-hl-Tkf"/>
+                            <constraint firstItem="tsR-kz-QPT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="csE-Pl-QKk"/>
+                            <constraint firstItem="tsR-kz-QPT" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" symbolic="YES" id="gsB-Ue-rze"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wxo-VE-qoN" secondAttribute="trailing" id="ier-N4-ePC"/>
                             <constraint firstItem="Wxo-VE-qoN" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="jM5-bH-Gqj"/>
+                            <constraint firstItem="tsR-kz-QPT" firstAttribute="trailing" secondItem="Wxo-VE-qoN" secondAttribute="trailing" id="m67-qu-v0O"/>
+                            <constraint firstItem="Wxo-VE-qoN" firstAttribute="top" secondItem="tsR-kz-QPT" secondAttribute="bottom" constant="8" symbolic="YES" id="tcY-sz-0ps"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="bAe-iD-9Et"/>
                                 <exclude reference="jM5-bH-Gqj"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="first" id="csa-1F-nZj"/>
+                    <connections>
+                        <outlet property="restaurantImage" destination="Wxo-VE-qoN" id="NzH-Ae-Mfq"/>
+                        <outlet property="restaurantInfo" destination="INo-Z0-gy0" id="8N6-nb-9bU"/>
+                        <outlet property="restaurantName" destination="tsR-kz-QPT" id="tgk-K0-SRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="-977"/>
+            <point key="canvasLocation" x="886" y="-941"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -284,9 +121,17 @@ Cgk
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X3K-ee-9zf">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="100" id="fk4-Lp-Aa8" customClass="MenuItemCell" customModule="CSC415" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="136" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fk4-Lp-Aa8" id="Ard-hv-Zli">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
@@ -373,10 +218,14 @@ Cgk
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="priceLabel" destination="X3K-ee-9zf" id="JNY-MQ-hJk"/>
+                        <outlet property="tableView" destination="eoE-ZZ-nvn" id="968-dh-00W"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6d-nA-Mv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664" y="880"/>
+            <point key="canvasLocation" x="1678" y="626"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="BQT-9b-xLr">
@@ -388,11 +237,11 @@ Cgk
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="100" id="JEP-GO-jy2" customClass="MenuItemCell" customModule="CSC415" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="100" id="JEP-GO-jy2" customClass="MenuItemCell" customModule="CSC415" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JEP-GO-jy2" id="gBD-86-jMv">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8w-AC-vC6">
@@ -406,6 +255,14 @@ Cgk
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="FRA-pf-5oH">
+                                            <rect key="frame" x="8" y="8" width="74" height="74"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="74" id="PIk-AJ-0iI"/>
+                                                <constraint firstAttribute="height" constant="74" id="YoC-u0-Pri"/>
+                                            </constraints>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXS-4Y-fn9">
                                             <rect key="frame" x="90" y="66" width="249" height="26"/>
                                             <animations/>
@@ -416,14 +273,6 @@ Cgk
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="FRA-pf-5oH">
-                                            <rect key="frame" x="8" y="8" width="74" height="74"/>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="74" id="PIk-AJ-0iI"/>
-                                                <constraint firstAttribute="height" constant="74" id="YoC-u0-Pri"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
@@ -444,6 +293,7 @@ Cgk
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="use-k8-qfM" id="h1m-x9-2GF"/>
                             <outlet property="delegate" destination="use-k8-qfM" id="3mF-aV-SZ6"/>
@@ -453,12 +303,12 @@ Cgk
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="zCZ-ey-Idt" kind="push" identifier="detailSegue" id="0CW-WW-JBG"/>
+                        <segue destination="zCZ-ey-Idt" kind="show" identifier="detailSegue" id="0CW-WW-JBG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ic-91-qa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="-21"/>
+            <point key="canvasLocation" x="1678" y="-229"/>
         </scene>
         <!--Item Info-->
         <scene sceneID="zwe-yo-V46">
@@ -520,7 +370,11 @@ Cgk
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Item Info" id="x9u-MD-YoR">
-                        <barButtonItem key="rightBarButtonItem" title="Add to Cart" id="Ctd-jH-thy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add to Cart" id="Ctd-jH-thy">
+                            <connections>
+                                <segue destination="49e-Tb-3d3" kind="presentation" modalTransitionStyle="crossDissolve" id="u54-We-8X3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -531,7 +385,7 @@ Cgk
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phF-Fp-B7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278" y="905"/>
+            <point key="canvasLocation" x="2422" y="-229"/>
         </scene>
         <!--Menu-->
         <scene sceneID="QmF-y4-aWl">
@@ -551,7 +405,7 @@ Cgk
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9um-1y-XTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="-1"/>
+            <point key="canvasLocation" x="886" y="-229"/>
         </scene>
         <!--Cart-->
         <scene sceneID="bRs-co-QGp">
@@ -572,7 +426,7 @@ Cgk
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eys-Fi-a8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="870"/>
+            <point key="canvasLocation" x="878" y="626"/>
         </scene>
     </scenes>
     <resources>

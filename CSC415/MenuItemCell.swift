@@ -12,6 +12,7 @@ class MenuItemCell: UITableViewCell {
 
     // MARK: Properties
     
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var priceView: UILabel!

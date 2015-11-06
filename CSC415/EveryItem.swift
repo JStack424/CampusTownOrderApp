@@ -10,22 +10,15 @@ import UIKit
 
 class EveryItem {
     
-    var fullMenu = [
-        "Plain Slice": MenuItem(name: "Plain Slice", photo: UIImage(named: "pizza1"), price: 2.5),
-        "Pepperoni Slice": MenuItem(name: "Pepperoni Slice", photo: UIImage(named: "pizza2"), price: 3.5),
-        "Specialty Slice": MenuItem(name: "Specialty Slice", photo: UIImage(named: "pizza3"), price: 5),
-        "Sausage Slice": MenuItem(name: "Sausage Slice", photo: UIImage(named: "pizza2"), price: 4),
-        "Pepper Slice": MenuItem(name: "Pepper Slice", photo: UIImage(named: "pizza1"), price: 3.5),
-        "Buffalo Chicken Slice": MenuItem(name: "Buffalo Chicken Slice", photo: UIImage(named: "pizza3"), price: 5.5),
+    let menuItems: [MenuItem] = [
+        MenuItem(name: "Plain Slice", photo: UIImage(named: "plain"), price: 2.5),
+        MenuItem(name: "Pepperoni Slice", photo: UIImage(named: "pepperoni"), price: 3.5),
+        MenuItem(name: "Specialty Slice", photo: UIImage(named: "specialty"), price: 5),
+        MenuItem(name: "Sausage Slice", photo: UIImage(named: "sausage"), price: 4),
+        MenuItem(name: "Veggie Slice", photo: UIImage(named: "veggie"), price: 3.5),
+        MenuItem(name: "Buffalo Chicken Slice", photo: UIImage(named: "buffchick"), price: 5.5),
+        MenuItem(name: "Greek Slice", photo: UIImage(named: "greek"), price: 5.5),
+        MenuItem(name: "Hawaiian Slice", photo: UIImage(named: "hawaiian"), price: 5.5)
     ]
     
-    var cartContents = [MenuItem]()
-    
-    func getMenuItems() -> [MenuItem] {
-        var allItems = [MenuItem]()
-        for item in fullMenu {
-            allItems.append(item.1)
-        }
-        return allItems
-    }
 }

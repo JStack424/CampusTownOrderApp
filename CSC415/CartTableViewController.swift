@@ -10,24 +10,28 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
 
+    var allItems = EveryItem().menuItems
     var cartItems = [MenuItem]()
-    var itemToAdd: MenuItem?
+    @IBOutlet weak var priceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addItem(itemToAdd)
+        priceLabel.backgroundColor = UIColor.greenColor()
+        calculatePrice()
 
         // Uncomment the following line to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
+        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
     }
-    
-    func addItem(item: MenuItem?) {
-        if let x = item {
-            cartItems += [x]
+
+    func calculatePrice() {
+        var totalCost: Float = 0
+        for item in cartItems {
+            totalCost += item.price
         }
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        priceLabel.text = "Total Cost: " + formatter.stringFromNumber(totalCost)!
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +40,7 @@ class CartTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
@@ -51,14 +56,14 @@ class CartTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "MenuItemCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MenuItemCell
-        let menuItem = cartItems[indexPath.row]
+        let cartItem = cartItems[indexPath.row]
         
         //Configure the Cell
-        cell.nameLabel.text = menuItem.name
-        cell.photoView.image = menuItem.photo
+        cell.nameLabel.text = cartItem.name
+        cell.photoView.image = cartItem.photo
         let formatter = NSNumberFormatter()
         formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
-        cell.priceView.text = formatter.stringFromNumber(menuItem.price)
+        cell.priceView.text = formatter.stringFromNumber(cartItem.price)
 
 
         return cell
@@ -78,6 +83,8 @@ class CartTableViewController: UITableViewController {
         if editingStyle == .Delete {
             // Delete the row from the data source
             cartItems.removeAtIndex(indexPath.row)
+            tableView.reloadData()
+            calculatePrice()
             //tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
