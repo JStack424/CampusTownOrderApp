@@ -5,10 +5,18 @@
 //  Created by Joe Stack on 11/2/15.
 //  Copyright © 2015 Articular Multimedia. All rights reserved.
 //
+//  Name: Joseph Stack
+//  Course: CSC 415
+//  Semester: Fall 2015
+//  Instructor: Dr. Pulimood
+//  Project name: Guy
+//  Description: Food ordering software for iOS
+//  Filename: MenuItem.swift
+//  Description: Class used to store information about one item on the menu. An array of this is used to store the whole menu
+//  Last modified on: 11/6/15
 
 import UIKit
 
-//This class is used to store information about one item on the menu. An array of these are used to store the whole menu
 class MenuItem {
     
     //Properties

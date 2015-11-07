@@ -5,6 +5,15 @@
 //  Created by Joe Stack on 11/2/15.
 //  Copyright © 2015 Articular Multimedia. All rights reserved.
 //
+//  Name: Joseph Stack
+//  Course: CSC 415
+//  Semester: Fall 2015
+//  Instructor: Dr. Pulimood
+//  Project name: Guy
+//  Description: Food ordering software for iOS
+//  Filename: MenuTableViewController.swift
+//  Description: Controller that manages the table view used to present all menu options
+//  Last modified on: 11/6/15
 
 import UIKit
 

@@ -5,6 +5,15 @@
 //  Created by Joe Stack on 11/1/15.
 //  Copyright © 2015 Articular Multimedia. All rights reserved.
 //
+//  Name: Joseph Stack
+//  Course: CSC 415
+//  Semester: Fall 2015
+//  Instructor: Dr. Pulimood
+//  Project name: Guy
+//  Description: Food ordering software for iOS
+//  Filename: InfoViewController.swift
+//  Description: Controller which manages the view that displays information aout the restaurant
+//  Last modified on: 11/6/15
 
 import UIKit
 
