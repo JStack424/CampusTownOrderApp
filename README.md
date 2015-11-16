@@ -1,4 +1,5 @@
-# guy
+# CampusTownOrderApp
+
 Food ordering iOS software
 
 Project GitHub Repository: https://github.com/JStack424/guy
