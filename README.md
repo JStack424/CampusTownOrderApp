@@ -2,7 +2,7 @@
 
 Food ordering iOS software
 
-Project GitHub Repository: https://github.com/JStack424/guy
+Project GitHub Repository: https://github.com/JStack424/CampusTownOrderApp
 
 Install instructions:
     - Open project files in XCode
